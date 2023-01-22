@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <style>
         body {
     background-color: white;
@@ -18,10 +18,36 @@
     }
 
     #button{
-        width: 50%;
+        width: 75%;
+        height: 30px;
+        background-color: #0E9D57;
+        color: white;
+        border-radius: 5px;
+
     }
+
     .datos{
-        width: 50%;
+        width: 70%;
+        height: 25px;    
+    }
+
+    .birthdate{
+        width: 90px;
+    }
+
+    .fieldset{
+        width: 25%;
+        border-radius: 5px 5px 5px;
+
+    }
+
+    legend{
+        text-align: center;
+    }
+
+    .coment {
+        width: 70%;
+        height: 50px;
     }
 
     </style>
@@ -34,7 +60,7 @@
         <center>
             <h1>Registrate</h1>
             <form action="">
-                <fieldset>
+                <fieldset class="fieldset">
 
 
                     <legend>Datos Personales</legend>
@@ -61,7 +87,7 @@
                 </p>
 
                 <p>
-                    <label for="">Fecha de Nacimiento: <input type="date" name="birthdate"></label>
+                    <label for="">Fecha de Nacimiento: <input type="date" class="birthdate" name="birthdate"></label>
                 </p>
 
                 <p>
@@ -69,7 +95,7 @@
                 </p>
 
                 <p>
-                    <label for=""><textarea name="coment" class="datos" cols="30" rows="3"></textarea></label>
+                    <label for=""><textarea name="coment" class="coment" cols="30" rows="3"></textarea></label>
                 </p>
 
                     <p>
